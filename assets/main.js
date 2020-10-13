@@ -1,4 +1,4 @@
-// chiedere i chilometri da percorrere e l'età al passeggero e verificare che l'utente inserisca dei numeri
+// chiedere i chilometri da percorrere, l'età al passeggero e verificare che vengano restituiti dei numeri
 
 var chilometri = parseInt(prompt('Quanti chilometri devi percorrere?'));
 
@@ -17,23 +17,29 @@ document.getElementById('età-passeggero').innerHTML = età;
 if (!isNaN(chilometri)) {
     console.log('è un numero');
     var prezzoGenerale = chilometri * 0.21;
-    console.log(chilometri * 0.21);
+    console.log(prezzoGenerale);
 } else {
     console.log('non è un numero');
 }
+
+document.getElementById('prezzo-generale').innerHTML = prezzoGenerale;
 
 // calcolare lo sconto in base all'età dell'utente. 20% per i minorenni 40% over 65
 
 if (età < 18) {
     console.log('sconto 20% per minorenni');
-    var prezzoScontato = prezzoGenerale * 20 / 100;
+    var prezzoMinori = prezzoGenerale * 20 / 100;
     console.log(prezzoGenerale * 20 / 100);
 } else if (età >65) {
     console.log('sconto 40% per over 60');
-    var prezzoScontato = prezzoGenerale * 40 / 100;
+    var prezzoOver = prezzoGenerale * 40 / 100;
     console.log(prezzoGenerale * 40 / 100);
 } else {
     console.log('prezzo biglietto generale');
     var prezzoGenerale = chilometri * 0.21;
     console.log(chilometri * 0.21);
 }
+
+document.getElementById('prezzo-scontato').innerHTML = prezzoMinori;
+
+document.getElementById('prezzo-scontato').innerHTML = prezzoOver;
