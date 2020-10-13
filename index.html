@@ -3,15 +3,33 @@
     <head>
         <meta charset="utf-8">
         <title>Biglietto del treno</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/style.css">
     </head>
     <body>
         <div class="container-biglietto">
-            <h1>Biglietto del treno</h1>
-            <p>Chilometri tratta: <span id="chilometri-tratta"></span> km</p>
-            <p>Età passeggero: <span id="età-passeggero"></span> anni</p>
-            <p>Prezzo del biglietto: €<span id="prezzo-generale"></span></p>
-            <p>Prezzo scontato: €<span id="prezzo-scontato"></span></p>
+            <header>
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/it/a/a4/Logo_Italo_Treno.png" alt="">
+                </div>
+                <div class="code">
+                    <p>Codice biglietto: <span>ghy37s</span></p>
+                </div>
+            </header>
+            <main>
+                <div class="info">
+                    <div class="info-left">
+                        <p>Chilometri tratta: <span id="chilometri-tratta"></span> km</p>
+                        <p>Partenza: <span>Torino Porta Nuova, 14:50</span></p>
+                        <p>Treno: <span>7952</span></p>
+                    </div>
+                    <div class="info-right">
+                        <p>Età passeggero: <span id="età-passeggero"></span> anni</p>
+                        <p>Prezzo del biglietto: €<span id="prezzo-generale"></span></p>
+                        <p>Prezzo scontato: €<span id="prezzo-scontato"></span></p>
+                    </div>
+                </div>
+            </main>
         </div>
         <script src="assets/main.js" charset="utf-8"></script>
     </body>
