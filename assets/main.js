@@ -1,6 +1,6 @@
 // chiedere i chilometri da percorrere e l'età al passeggero e verificare che l'utente inserisca dei numeri
 
-var chilometri = parseInt(prompt('Quanti chilometri vuoi percorrere?'));
+var chilometri = parseInt(prompt('Quanti chilometri devi percorrere?'));
 
 var età = parseInt(prompt('Quanti anni hai?'));
 
